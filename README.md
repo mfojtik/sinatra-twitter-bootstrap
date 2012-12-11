@@ -60,3 +60,4 @@ Twitter Bootstrap is licenced under Apache Software License (ASL)
 http://www.apache.org/licenses/LICENSE-2.0.txt
 
 JQuery is licenced under MIT license.
+HTML5 Shiv is licenced under MIT/GPL2 (https://github.com/aFarkas/html5shiv)
