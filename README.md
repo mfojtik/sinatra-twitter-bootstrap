@@ -1,4 +1,4 @@
-Twitter Bootstrap Sinatra (helpers)
+Sinatra Twitter Bootstrap (css+js+helpers)
 =================
 
 What?
