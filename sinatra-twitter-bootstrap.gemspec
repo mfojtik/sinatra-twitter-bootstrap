@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "sinatra-twitter-bootstrap"
-  s.version = "2.2.2"
+  s.version = "2.3.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michal Fojtik"]
@@ -18,6 +18,8 @@ Gem::Specification.new do |s|
     "lib/sinatra/assets/bootstrap.min.js",
     "lib/sinatra/assets/html5.js",
     "lib/sinatra/assets/jquery.min.js",
+    "lib/sinatra/assets/glyphicons-halflings.png",
+    "lib/sinatra/assets/glyphicons-halflings-white.png",
     "lib/sinatra/twitter-bootstrap.rb"
   ]
   s.homepage = "http://github.com/mifo/sinatra-twitter-bootstrap"
