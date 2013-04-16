@@ -19,7 +19,11 @@ How?
 
 Is simple. Add this line to your Gemfile:
 
-    gem 'sinatra-twitter-bootstrap'
+    gem 'sinatra-twitter-bootstrap', :require => 'sinatra/twitter-bootstrap'
+    
+or without bundler, `gem install sinatra-twitter-bootstrap` and then: 
+
+    require 'sinatra/twitter-bootstrap'
 
 Then in your Sinatra application/class you can do:
 
