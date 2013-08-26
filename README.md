@@ -1,10 +1,10 @@
-Sinatra Twitter Bootstrap (css+js+helpers)
+Sinatra Bootstrap (css+js+helpers)
 =================
 
 What?
 --------
 
-A set of helpers that brings beauty of Twitter Bootstrap CSS to your Sinatra
+A set of helpers that brings beauty of Bootstrap CSS to your Sinatra
 applications. This gem bundle all CSS and Javascript files needed for this.
 
 Why?
@@ -60,7 +60,7 @@ License
 This code is licensed under Apache Software License (ASLv2)
 http://www.apache.org/licenses/LICENSE-2.0.txt
 
-Twitter Bootstrap is licenced under Apache Software License (ASL)
+Bootstrap is licenced under Apache Software License (ASL)
 http://www.apache.org/licenses/LICENSE-2.0.txt
 
 JQuery is licenced under MIT license.
