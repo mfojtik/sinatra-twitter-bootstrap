@@ -10,6 +10,8 @@ module Sinatra
           :css => [
             ['bootstrap.min.css', 'a5cee949f15193b2e2f9aa7275051dea69d0eea1'],
             ['bootstrap-responsive.min.css', '68e924c9fcbee3cb5d47ca6d284fb3eec82dd304'],
+          ],
+          :png => [
             ['glyphicons-halflings.png', '84f613631b07d4fe22acbab50e551c0fe04bd78b'],
           ],
           :js => [
@@ -23,7 +25,8 @@ module Sinatra
           ASSETS.each do |kind, files|
             files.each do |file|
               name, sha1 = file
-              app.get '/%s/%s' % [kind.to_s, name], :provides => kind do
+              kind_route = (kind == :png) ? :img : kind
+              app.get '/%s/%s' % [kind_route.to_s, name], :provides => kind do
                 cache_control :public, :must_revalidate, :max_age => 3600
                 etag sha1
                 File.read(File.join(File.dirname(__FILE__), 'assets', name))
