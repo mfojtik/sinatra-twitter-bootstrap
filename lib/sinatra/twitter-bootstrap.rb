@@ -13,6 +13,7 @@ module Sinatra
           ],
           :png => [
             ['glyphicons-halflings.png', '84f613631b07d4fe22acbab50e551c0fe04bd78b'],
+            ['glyphicons-halflings-white.png', '9bbc6e9602998a385c2ea13df56470fd']
           ],
           :js => [
             ['jquery.min.js', '8b6babff47b8a9793f37036fd1b1a3ad41d38423'],
