@@ -28,9 +28,10 @@ module Sinatra
               name, sha1 = file
               kind_route = (kind == :png) ? :img : kind
               app.get '/%s/%s' % [kind_route.to_s, name], :provides => kind do
-                cache_control :public, :must_revalidate, :max_age => 3600
+                cache_control :public, :must_revalidate, :max_age => 1
                 etag sha1
-                File.read(File.join(File.dirname(__FILE__), 'assets', name))
+                path = File.join(File.dirname(__FILE__), 'assets', name)
+                send_file path, :disposition => nil
               end
             end
           end
